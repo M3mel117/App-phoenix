@@ -1,2 +1,47 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+/* ===== ESCUADRA APP DESIGN SYSTEM ===== */
+
+/* COLORES BASE */
+:root {
+  --esc-dark: #000000;
+  --esc-dark-soft: #171717;
+  --esc-dark-medium: #262626;
+  --esc-light: #ffffff;
+  --esc-accent: #FF6A00;
+  --esc-whatsapp: #25D366;
+
+  /* Aplicación */
+  --ion-background-color: #ffffff;
+  --ion-text-color: #000000;
+
+  /* Bordes */
+  --esc-radius: 18px;
+
+  /* Sombras */
+  --esc-shadow-soft: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== MODO OSCURO ===== */
+.dark {
+  --ion-background-color: #000000;
+  --ion-text-color: #ffffff;
+
+  --esc-dark-soft: #111111;
+  --esc-dark-medium: #1c1c1c;
+}
+
+/* ===== ELEMENTOS GLOBALES ===== */
+
+ion-content {
+  --background: var(--ion-background-color);
+  color: var(--ion-text-color);
+}
+
+ion-card {
+  border-radius: var(--esc-radius);
+  box-shadow: var(--esc-shadow-soft);
+  background: var(--esc-light);
+}
+
+.dark ion-card {
+  background: var(--esc-dark-soft);
+}

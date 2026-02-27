@@ -1,0 +1,7 @@
+{
+  "name": "escuadraapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

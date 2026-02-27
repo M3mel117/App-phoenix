@@ -2,11 +2,6 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'tabs',
-    pathMatch: 'full',
-  },
-  {
     path: 'tabs',
     loadComponent: () =>
       import('./pages/tabs/tabs.page').then(m => m.TabsPage),
@@ -33,19 +28,14 @@ export const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: 'home',
+        redirectTo: '/tabs/home',
         pathMatch: 'full',
       },
     ],
   },
   {
-    path: 'login',
-    loadComponent: () =>
-      import('./pages/login/login.page').then(m => m.LoginPage),
-  },
-  {
-    path: 'curso-detalle/:id',
-    loadComponent: () =>
-      import('./pages/curso-detalle/curso-detalle.page').then(m => m.CursoDetallePage),
+    path: '',
+    redirectTo: '/tabs/home',
+    pathMatch: 'full',
   },
 ];
